@@ -6,42 +6,40 @@
 public class Europeu extends Castelo {
 	protected int numPaladinos;
 
-/**
-*	Construtor
-*/
+	/**
+	 *	Construtor
+	 */
 	Europeu () {
 		super ();
-	}
+	 }
 
-/**
-*	Mostrar situacao
-*/
+	/**
+	 *	Mostrar situacao
+	 */
 	public void mostrarSituacao() {
 		
-	}
+	 }
 
-/**
-*	Realiza um ataque
-*	@param Recebe um valor de ataque
-*/
+	/**
+	 *	Realiza um ataque
+	 *	@param Recebe um valor de ataque
+	 */
 	public void ataque ( double dano ) {
 		this.pontosVida -= dano;
-	}
-
-//---------------------------------------------------
-// Get e Set *Numero Paladinos
-	/**
-	*	@param Da um novo valor para a variavel *numPaladinos
-	*/
-		public void setNumPaladinos ( int numPaladinos ) {
-			this.numPaladinos = numPaladinos;
-		}
+	 }
 
 	/**
-	*	@return Retorna o valor de *numPaladinos
-	*/	
-		public int getNumPaladinos () {
-			return this.numPaladinos;
-		}
-//---------------------------------------------------
+	 *	@param Da um novo valor para a variavel *numPaladinos
+	 */
+	public void setNumPaladinos ( int numPaladinos ) {
+		this.numPaladinos = numPaladinos;
+	 }
+
+	/**
+	 *	@return Retorna o valor de *numPaladinos
+	 */	
+	public int getNumPaladinos () {
+		return this.numPaladinos;
+	 }
+
 }
