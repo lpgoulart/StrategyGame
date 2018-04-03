@@ -2,7 +2,10 @@
 *	@author Leonardo Goulart
 *	@author Arthur Cohen
 *	@version 1.0
+*	@since 1.0
 */
+
+package castle;
 
 public class Castelo {
 	

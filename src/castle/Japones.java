@@ -2,12 +2,17 @@
 *	@author Leonardo Goulart
 *	@author Arthur Cohen
 *	@version 1.0
+*	@since 1.0
 */
+
+package castle;
+
 import java.util.List;
 import java.util.ArrayList;
+import castle.units.Samurai;
 
-public class Europeu extends Castelo {
-	private List<Paladino> paladinos;
+public class Japones extends Castelo {
+	private List<Samurai> samurais;
 
 	/**
 	 *	Construtor
@@ -16,16 +21,16 @@ public class Europeu extends Castelo {
 	 *  @param pontosVida Os pontos de vida que o castelo possui
 	 *  @param nome Representacao textual do castelo
 	 */
-	Europeu(double defesas, int[] localizacao, double pontosVida, String nome){
+	Japones(double defesas, int[] localizacao, double pontosVida, String nome){
 		super(defesas, localizacao, pontosVida, nome);
-		this.paladinos = new ArrayList<Paladino>();
+		this.samurais = new ArrayList<Samurai>();
 	}
 
 	/**
 	 *	Mostrar situacao
 	 *  @return Informacoes sobre o castelo
 	 */
-	public String mostrarSituacao() {
+	public String mostrarSituacao(){
 		return "";
 	}
 
@@ -34,7 +39,7 @@ public class Europeu extends Castelo {
 	 *	@param dano O valor que representa o ataque sofrido
 	 */
 	public void ataque(double dano){
-		if (this.paladinos.size() > 0){
+ 		if (this.samurais.size() > 0){
 			// Matar de 2 a 5 guerreiros
 			
 		}else{
@@ -43,16 +48,16 @@ public class Europeu extends Castelo {
 	}
 
 	/**
-	 *	@param paladinos Da um novo valor para a variavel paladinos
+	 *	@param Da um novo valor para a variavel *numSamurais
 	 */
-	public void setPaladinos(List<Paladino> paladinos){
-		this.paladinos = paladinos;
+	public void setSamurais(List<Samurai> samurais){
+		this.samurais = samurais;
 	}
 
 	/**
-	 *	@return Retorna o valor de paladinos
+	 *	@return Retorna o valor de *numSamurais
 	 */	
-	public List<Paladino> getPaladinos(){
-		return this.paladinos;
+	public List<Samurai> getSamurais(){
+		return this.samurais;
 	}
 }
